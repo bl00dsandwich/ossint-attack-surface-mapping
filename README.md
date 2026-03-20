@@ -148,4 +148,4 @@ Estas tecnologías facilitan:
 Se pueden utilizar asistentes como **ShellGPT** para orquestar herramientas de forma automática. Ejemplo:
 
 ```bash
-Utilice dnsmap para extraer los subdominios de objetivo.com y URLCrazy para identificar los nombres de dominio similares a microsoft.com. Guarde los resultados en un archivo de texto.
+Utilice dnsmap para extraer los subdominios de objetivo.com y URLCrazy para identificar los nombres de dominio similares a objetivo.com. Guarde los resultados en un archivo de texto.
