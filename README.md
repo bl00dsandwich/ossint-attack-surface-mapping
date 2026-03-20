@@ -132,4 +132,20 @@ Ejemplos comunes incluyen:
 
 ---
 
+### 🤖 OSINT automatizado con IA
 
+El uso de **herramientas basadas en IA** permite a los pentesters automatizar tareas de reconocimiento OSINT, mejorando significativamente la **eficiencia y precisión** en la recopilación de información.
+
+Estas tecnologías facilitan:
+- Descubrimiento automatizado de subdominios  
+- Identificación de dominios similares (typosquatting)  
+- Procesamiento y organización de grandes volúmenes de datos  
+
+---
+
+#### ⚙️ Ejemplo de automatización
+
+Se pueden utilizar asistentes como **ShellGPT** para orquestar herramientas de forma automática. Ejemplo:
+
+```bash
+Utilice dnsmap para extraer los subdominios de objetivo.com y URLCrazy para identificar los nombres de dominio similares a microsoft.com. Guarde los resultados en un archivo de texto.
