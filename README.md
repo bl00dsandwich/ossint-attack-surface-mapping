@@ -28,39 +28,6 @@ Los subdominios suelen corresponder a aplicaciones independientes (muchas veces 
 
 ---
 
-#### 🛠️ Herramientas principales
-
-- **SubBrute**
-  Fuente: https://github.com/TheRook/subbrute 
-  Enumeración de subdominios mediante fuerza bruta y consultas DNS recursivas, incluso detectando subdominios ocultos o bloqueados.
-  Uso: subbrute.py microsoft.com
-
-- **Nmap (dns-brute)**
-  Fuente: https://nmap.org
-  Permite descubrir subdominios y registros DNS (incluidos SRV) utilizando scripts NSE.
-  Uso: nmap --script dns-brute www.objetivo.com
-
-- **dnsmap**
-  Fuente: https://github.com/resurrecting-open-source-projects/dnsmap
-  Identifica subdominios adicionales y bloques de IP asociados, ampliando la visibilidad de la infraestructura del objetivo.
-  Uso: dnsmap objetivo.com
-
-- **Fierce**
-  Fuente: https://github.com/mschwager/fierce 
-  Herramienta de reconocimiento DNS enfocada en detectar subdominios, rangos de IP y configuraciones erróneas.
-  Uso: fierce --domain objetivo.com
-
-- **Sublist3r**
-  Fuente: https://github.com/aboul3la/Sublist3r 
-  Enumeración OSINT de subdominios utilizando múltiples fuentes como motores de búsqueda y bases de datos públicas.
-  Uso: python3 sublist3r.py -d objetivo.com -p 80
-
-- **Netcraft**
-  Fuente: https://searchdns.netcraft.com 
-  Plataforma que permite descubrir subdominios, incluidos aquellos no indexados o intencionadamente ocultos.
-
----
-
 #### 🎯 Objetivo
 
 Obtener una visión completa de:
@@ -69,3 +36,56 @@ Obtener una visión completa de:
 - Posibles puntos de entrada  
 
 Esto permite realizar una evaluación de seguridad más completa y efectiva.
+
+---
+
+#### 🛠️ Herramientas principales
+
+- **SubBrute**
+
+  Fuente: https://github.com/TheRook/subbrute 
+
+  Enumeración de subdominios mediante fuerza bruta y consultas DNS recursivas, incluso detectando subdominios ocultos o bloqueados.
+
+  Uso: ```subbrute.py microsoft.com```
+
+- **Nmap (dns-brute)**
+
+  Fuente: https://nmap.org
+
+  Permite descubrir subdominios y registros DNS (incluidos SRV) utilizando scripts NSE.
+
+  Uso: ```nmap --script dns-brute www.objetivo.com```
+
+- **dnsmap**
+
+  Fuente: https://github.com/resurrecting-open-source-projects/dnsmap
+
+  Identifica subdominios adicionales y bloques de IP asociados, ampliando la visibilidad de la infraestructura del objetivo.
+
+  Uso: ```dnsmap objetivo.com```
+
+- **Fierce**
+
+  Fuente: https://github.com/mschwager/fierce 
+
+  Herramienta de reconocimiento DNS enfocada en detectar subdominios, rangos de IP y configuraciones erróneas.
+
+  Uso: ```fierce --domain objetivo.com```
+
+- **Sublist3r**
+
+  Fuente: https://github.com/aboul3la/Sublist3r 
+
+  Enumeración OSINT de subdominios utilizando múltiples fuentes como motores de búsqueda y bases de datos públicas.
+
+  Uso: ```python3 sublist3r.py -d objetivo.com -p 80```
+
+- **Netcraft**
+
+  Fuente: https://searchdns.netcraft.com 
+
+  Plataforma que permite descubrir subdominios, incluidos aquellos no indexados o intencionadamente ocultos.
+
+---
+
