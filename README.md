@@ -15,3 +15,57 @@ Este enfoque facilita la detección de riesgos como:
 * Fugas de información sensible
 
 Además, garantiza una fase de reconocimiento más completa, permitiendo simular escenarios de ataque realistas dentro de un marco ético y legal. Como resultado, las organizaciones pueden anticiparse a amenazas y reforzar su postura de seguridad.
+
+## OSINT sobre el nombre de dominio del objetivo
+Esta sección se centra en la recopilación de OSINT relacionada con el nombre de dominio del objetivo mediante información disponible públicamente. Permite a los pentesters obtener detalles como subdominios, registros DNS, datos WHOIS, direcciones IP, direcciones de correo electrónico y servicios de acceso público, lo que proporciona información valiosa sobre la infraestructura del objetivo y posibles vectores de ataque.
+
+
+### 🌐 Encontrar el dominio y los subdominios del objetivo 
+
+La identificación del dominio y sus subdominios es un paso clave en pentesting, ya que permite descubrir la **superficie de ataque** y los distintos activos expuestos de una organización.  
+
+Los subdominios suelen corresponder a aplicaciones independientes (muchas veces internas o menos securizadas), lo que los convierte en objetivos especialmente interesantes durante la fase de reconocimiento.
+
+---
+
+#### 🛠️ Herramientas principales
+
+- **SubBrute**
+  Fuente: https://github.com/TheRook/subbrute 
+  Enumeración de subdominios mediante fuerza bruta y consultas DNS recursivas, incluso detectando subdominios ocultos o bloqueados.
+  Uso: subbrute.py microsoft.com
+
+- **Nmap (dns-brute)**
+  Fuente: https://nmap.org
+  Permite descubrir subdominios y registros DNS (incluidos SRV) utilizando scripts NSE.
+  Uso: nmap --script dns-brute www.objetivo.com
+
+- **dnsmap**
+  Fuente: https://github.com/resurrecting-open-source-projects/dnsmap
+  Identifica subdominios adicionales y bloques de IP asociados, ampliando la visibilidad de la infraestructura del objetivo.
+  Uso: dnsmap objetivo.com
+
+- **Fierce**
+  Fuente: https://github.com/mschwager/fierce 
+  Herramienta de reconocimiento DNS enfocada en detectar subdominios, rangos de IP y configuraciones erróneas.
+  Uso: fierce --domain objetivo.com
+
+- **Sublist3r**
+  Fuente: https://github.com/aboul3la/Sublist3r 
+  Enumeración OSINT de subdominios utilizando múltiples fuentes como motores de búsqueda y bases de datos públicas.
+  Uso: python3 sublist3r.py -d objetivo.com -p 80
+
+- **Netcraft**
+  Fuente: https://searchdns.netcraft.com 
+  Plataforma que permite descubrir subdominios, incluidos aquellos no indexados o intencionadamente ocultos.
+
+---
+
+#### 🎯 Objetivo
+
+Obtener una visión completa de:
+- Activos expuestos  
+- Infraestructura externa  
+- Posibles puntos de entrada  
+
+Esto permite realizar una evaluación de seguridad más completa y efectiva.
