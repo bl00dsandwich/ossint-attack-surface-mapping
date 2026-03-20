@@ -89,3 +89,47 @@ Esto permite realizar una evaluación de seguridad más completa y efectiva.
 
 ---
 
+### 🔎 Identificación de dominios similares (Typosquatting)
+
+Durante la fase de reconocimiento, es fundamental identificar **dominios similares o paralelos** al del objetivo. Estos pueden revelar intentos de **typosquatting**, donde usuarios son redirigidos a sitios maliciosos debido a errores tipográficos.
+
+Ejemplos comunes incluyen:
+- Variaciones de TLD (`.org`, `.net`, `.biz`, etc.)
+- Errores tipográficos (`ysecurity.cm`)
+- Alteraciones del dominio (`www-xsecurity.com`, `wwwxsecurity.com`)
+
+---
+
+#### 🎯 Objetivo
+
+- Identificar dominios fraudulentos o sospechosos  
+- Detectar posibles vectores de ataque  
+- Proteger la marca y a los usuarios finales
+
+---
+
+#### ⚠️ Riesgos asociados
+
+- Phishing y suplantación de identidad  
+- Secuestro de tráfico web  
+- Daño reputacional  
+- Exposición a ataques dirigidos  
+
+---
+
+#### 🛠️ Herramienta recomendada
+
+- **URLCrazy**
+  
+  Fuente: https://github.com/urbanadventurer/urlcrazy
+  
+  Genera variaciones de dominios para detectar:
+  - Typosquatting  
+  - Dominios maliciosos similares  
+  - Posibles campañas de phishing
+
+  Uso: ```urlcrazy -p objetivo.com```
+
+---
+
+
